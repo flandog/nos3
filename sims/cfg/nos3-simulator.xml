@@ -8,7 +8,7 @@
         <absolute-start-time>552110400.0</absolute-start-time>
         <sim-microseconds-per-tick>100000</sim-microseconds-per-tick>
 		<real-microseconds-per-tick>100000</real-microseconds-per-tick>
-        <nos-connection-string>tcp://127.0.0.1:12001</nos-connection-string>
+        <nos-connection-string>tcp://192.168.100.4:12001</nos-connection-string>
     </common>
 
     <simulators>
@@ -67,6 +67,11 @@
                 </default-streams>
                 <data-provider>
                     <type>SAMPLE_42_PROVIDER</type>
+                    <hostname>192.168.100.5</hostname>
+                    <port>4242</port>
+                    <max-connection-attempts>5</max-connection-attempts>
+                    <retry-wait-seconds>5</retry-wait-seconds>
+                    <spacecraft>0</spacecraft>
                 </data-provider>
             </hardware-model>
         </simulator>
@@ -85,7 +90,7 @@
                 </connections>
                 <data-provider>               
                     <type>GPS42SOCKET</type>
-                    <hostname>localhost</hostname>
+                    <hostname>192.168.100.5</hostname>
                     <port>4245</port>
                     <max-connection-attempts>5</max-connection-attempts>
                     <retry-wait-seconds>5</retry-wait-seconds>
@@ -133,7 +138,7 @@
                 </connections>
                 <data-provider>               
                     <type>GENERICRWSIMDATA42SOCKETPROVIDER</type>
-                    <hostname>localhost</hostname>
+                    <hostname>192.168.100.5</hostname>
                     <port>4277</port>
                     <command-port>4278</command-port>
                     <max-connection-attempts>5</max-connection-attempts>
@@ -158,7 +163,7 @@
                 </connections>
                 <data-provider>
                     <type>TRUTH42PROVIDER</type>
-                    <hostname>localhost</hostname>
+                    <hostname>192.168.100.5</hostname>
                     <port>9999</port>
                     <max-connection-attempts>10</max-connection-attempts>
                     <orbit>0</orbit>
