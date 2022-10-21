@@ -154,6 +154,7 @@
             <library>libtruth_42_sim.so</library>
             <hardware-model>
                 <type>TRUTH42</type>
+                <cosmos-ip>192.168.100.5</cosmos-ip>
                 <cosmos-port>5111</cosmos-port>
                 <initial-stream-time>1.0</initial-stream-time>
                 <stream-period-ms>100</stream-period-ms>
