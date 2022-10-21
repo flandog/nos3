@@ -67,7 +67,7 @@
                 </default-streams>
                 <data-provider>
                     <type>SAMPLE_42_PROVIDER</type>
-                    <hostname>192.168.100.5</hostname>
+                    <hostname>192.168.100.6</hostname>
                     <port>4242</port>
                     <max-connection-attempts>5</max-connection-attempts>
                     <retry-wait-seconds>5</retry-wait-seconds>
@@ -90,7 +90,7 @@
                 </connections>
                 <data-provider>               
                     <type>GPS42SOCKET</type>
-                    <hostname>192.168.100.5</hostname>
+                    <hostname>192.168.100.6</hostname>
                     <port>4245</port>
                     <max-connection-attempts>5</max-connection-attempts>
                     <retry-wait-seconds>5</retry-wait-seconds>
@@ -138,7 +138,7 @@
                 </connections>
                 <data-provider>               
                     <type>GENERICRWSIMDATA42SOCKETPROVIDER</type>
-                    <hostname>192.168.100.5</hostname>
+                    <hostname>192.168.100.6</hostname>
                     <port>4277</port>
                     <command-port>4278</command-port>
                     <max-connection-attempts>5</max-connection-attempts>
@@ -154,7 +154,7 @@
             <library>libtruth_42_sim.so</library>
             <hardware-model>
                 <type>TRUTH42</type>
-                <cosmos-ip>192.168.100.5</cosmos-ip>
+                <cosmos-ip>192.168.100.7</cosmos-ip>
                 <cosmos-port>5111</cosmos-port>
                 <initial-stream-time>1.0</initial-stream-time>
                 <stream-period-ms>100</stream-period-ms>
@@ -164,7 +164,7 @@
                 </connections>
                 <data-provider>
                     <type>TRUTH42PROVIDER</type>
-                    <hostname>192.168.100.5</hostname>
+                    <hostname>192.168.100.6</hostname>
                     <port>9999</port>
                     <max-connection-attempts>10</max-connection-attempts>
                     <orbit>0</orbit>
